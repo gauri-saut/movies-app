@@ -1,26 +1,38 @@
+import React from 'react';
 import MoviesData from "../MoviesData";
-import Card from "./Card";
 
-
-const Movies = () => {
-
-    console.log(MoviesData)
-    return(
-        <>  
-            <h1 className="text-center text-4xl text-red-600 my-5">Top 3 Movies for Watch</h1>
-            <div className="borderw-[100vw] flex justify-center items-center">
-                {
-                    MoviesData.map((val, index) => {
-                        return(
-                            <Card val={val}/>
-                        );
-                    })
-                }
-            </div>
-
-
-        </>
+function Star({ rating }) {
+    return (
+      <div>
+        {'★'.repeat(rating)}
+      </div>
     );
+  }
+  
+
+function Movies() {
+  return (
+    <div className='flex'>
+      {MoviesData.map((movies, index) => (
+        <div key={index} className="border w-72 m-5 h-[500px] rounded-lg shadow-md d-flex1">
+          <img src={movies.cover} className="w-[100%] h-[350px] rounded-t-lg" alt={movies.title} />
+          <div className="p-3">
+            <h1 className="text-4xl font-sans">{movies.title}</h1>
+            <p className="text-gray-600 my-3">
+
+
+              <Star rating={parseInt(movies.rating)} />
+            </p>
+
+
+
+
+            <a href={movies.link} className="w-20 h-20 border p-2 bg-black text-white rounded-lg shadow-md">Watch Now</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default Movies;

@@ -8,16 +8,16 @@ const MoviesData = [
         rating : "5"
     },
     {
-        title : "Hungama",
-        cover : "https://image.tmdb.org/t/p/w780/2L78yDdnzLZwAoaE6yngQvmvaki.jpg",
+        title : "Hi Papa",
+        cover : "https://assets.gadgets360cdn.com/pricee/assets/product/202307/Hi_Papa_1689847279.jpg",
         link : "https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root",
         rating : "4"
     },
     {
-        title : "Bahubali",
-        cover : "https://m.media-amazon.com/images/M/MV5BYWVlMjVhZWYtNWViNC00ODFkLTk1MmItYjU1MDY5ZDdhMTU3XkEyXkFqcGdeQXVyODIwMDI1NjM@._V1_FMjpg_UX1000_.jpg",
+        title : "Pathan",
+        cover : "https://static.toiimg.com/photo/97298218.cms?imgsize=20184",
         link : "https://www.primevideo.com/offers/nonprimehomepage/ref=dv_web_force_root",
-        rating : "2"
+        rating : "3"
     },
 ]
 

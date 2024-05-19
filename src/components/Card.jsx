@@ -1,7 +1,12 @@
 import React from 'react'
 
 function Card({val}) {
+    
+    
+    
+    
     return (
+
         <div className="border w-72 m-5 h-[500px] rounded-lg shadow-md">
             <img src={val.cover} className="w-[100%] h-[350px] rounded-t-lg" alt={val.title} />
             <div className="p-3">
